@@ -1,8 +1,11 @@
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'application'
 
-sourceCompatibility = 1.5
+mainClassName = "com.ilyarudyak.java.interview.princeton.BST"
+
+
 
 repositories {
     mavenCentral()
