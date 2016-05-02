@@ -95,6 +95,25 @@ public class BSTNonRecursive<Key extends Comparable<Key>, Value> {
         }
     }
 
+    // ----------------- helper functions ----------------
+
+    private static BST buildSampleBST() throws FileNotFoundException {
+        BST<String, Integer> bst = new BST<String, Integer>();
+        Scanner in = new Scanner(new File("src/main/resources/tinyST.txt"));
+        for (int i = 0; in.hasNext(); i++) {
+            String key = in.next();
+            bst.put(key, i);
+        }
+//        in.close();
+//
+//        in = new Scanner(new File("src/main/resources/tinyST.txt"));
+//        while (in.hasNext()) {
+//            String key = in.next();
+//            System.out.println(key + ":" + bst.get(key) + ":" + bst.getSize(key));
+//        }
+        return bst;
+    }
+
     public static void main(String[] args) throws FileNotFoundException {
         BSTNonRecursive<String, Integer> bst = new BSTNonRecursive<String, Integer>();
         Scanner in = new Scanner(new File("src/main/resources/tinyST.txt"));

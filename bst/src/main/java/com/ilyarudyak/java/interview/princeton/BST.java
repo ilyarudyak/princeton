@@ -34,6 +34,8 @@ public class BST<Key extends Comparable<Key>, Value> {
         else return x.N;
     }
 
+    // ----------------- get and put ---------------------
+
     public Value get(Key key) {
         return get(root, key);
     }
@@ -85,19 +87,86 @@ public class BST<Key extends Comparable<Key>, Value> {
         return 0;
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+    // ----------------- rank functions ------------------
+
+    public Key min() {
+        return min(root).key;
+    }
+    private Node min(Node x) {
+        if (x == null) {
+            return null;
+        }
+
+        if (x.left == null) {
+            return x;
+        }
+
+        return min(x.left);
+    }
+
+    public Key max() {
+        return max(root).key;
+    }
+    private Node max(Node x) {
+        if (x == null) {
+            return null;
+        }
+
+        if (x.right == null) {
+            return x;
+        }
+
+        return max(x.right);
+    }
+
+    // ----------------- helper functions ----------------
+
+    private static BST buildSampleBST() throws FileNotFoundException {
         BST<String, Integer> bst = new BST<String, Integer>();
         Scanner in = new Scanner(new File("src/main/resources/tinyST.txt"));
         for (int i = 0; in.hasNext(); i++) {
             String key = in.next();
             bst.put(key, i);
         }
-        in.close();
+//        in.close();
+//
+//        in = new Scanner(new File("src/main/resources/tinyST.txt"));
+//        while (in.hasNext()) {
+//            String key = in.next();
+//            System.out.println(key + ":" + bst.get(key) + ":" + bst.getSize(key));
+//        }
+        return bst;
+    }
 
-        in = new Scanner(new File("src/main/resources/tinyST.txt"));
-        while (in.hasNext()) {
-            String key = in.next();
-            System.out.println(key + ":" + bst.get(key) + ":" + bst.getSize(key));
-        }
+
+    public static void main(String[] args) throws FileNotFoundException {
+
+        BST bst = buildSampleBST();
+
+        System.out.println("min=" + bst.min() + " max=" + bst.max());
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
