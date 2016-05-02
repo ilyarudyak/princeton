@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dde2257-2cbd-4a2e-8604-a31493b78adf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/princeton/BSTTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ilyarudyak/java/interview/princeton/BST.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ilyarudyak/java/interview/princeton/BST.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java" />
     </list>
@@ -84,27 +84,38 @@
       <file leaf-file-name="BST.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5945946">
-              <caret line="203" column="64" selection-start-line="203" selection-start-column="64" selection-end-line="203" selection-end-column="64" />
+            <state vertical-scroll-proportion="1.308426">
+              <caret line="260" column="29" selection-start-line="260" selection-start-column="29" selection-end-line="260" selection-end-column="29" />
               <folding>
                 <element signature="docComment;class#BST#0" expanded="false" />
                 <element signature="class#Node#0;class#BST#0" expanded="false" />
                 <element signature="method#Node#0;class#Node#0;class#BST#0" expanded="false" />
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="e#800#801#0" expanded="true" />
                 <element signature="method#size#1;class#BST#0" expanded="false" />
+                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#1085#1086#0" expanded="true" />
                 <element signature="method#get#1;class#BST#0" expanded="false" />
-                <element signature="method#put#1;class#BST#0" expanded="false" />
+                <element signature="e#1457#1458#0" expanded="true" />
+                <element signature="e#1499#1500#0" expanded="true" />
                 <element signature="method#getSize#0;class#BST#0" expanded="false" />
+                <element signature="e#2382#2383#0" expanded="true" />
+                <element signature="e#2418#2419#0" expanded="true" />
                 <element signature="method#min#1;class#BST#0" expanded="false" />
+                <element signature="e#2631#2632#0" expanded="true" />
+                <element signature="e#2667#2668#0" expanded="true" />
                 <element signature="method#max#1;class#BST#0" expanded="false" />
                 <element signature="method#floor#0;class#BST#0" expanded="false" />
-                <element signature="method#floor#1;class#BST#0" expanded="false" />
-                <element signature="method#select#0;class#BST#0" expanded="false" />
                 <element signature="method#select#1;class#BST#0" expanded="false" />
                 <element signature="method#rank#0;class#BST#0" expanded="false" />
                 <element signature="method#rank#1;class#BST#0" expanded="false" />
-                <element signature="e#4582#4583#0" expanded="true" />
-                <element signature="e#4628#4629#0" expanded="true" />
-                <element signature="e#5311#5332#0" expanded="false" />
+                <element signature="e#4571#4572#0" expanded="true" />
+                <element signature="e#4600#4601#0" expanded="true" />
+                <element signature="e#5318#5319#0" expanded="true" />
+                <element signature="e#5364#5365#0" expanded="true" />
+                <element signature="method#isBST#1;class#BST#0" expanded="false" />
+                <element signature="method#buildSampleBST#0;class#BST#0" expanded="false" />
+                <element signature="e#6047#6068#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -962,7 +973,6 @@
             <element signature="method#put#0;class#BSTNonRecursive#0" expanded="false" />
             <element signature="method#put2#0;class#BSTNonRecursive#0" expanded="false" />
             <element signature="method#min#0;class#BSTNonRecursive#0" expanded="false" />
-            <element signature="method#max#0;class#BSTNonRecursive#0" expanded="false" />
             <element signature="method#buildSampleBST#0;class#BSTNonRecursive#0" expanded="false" />
             <element signature="e#3385#3406#0" expanded="false" />
             <element signature="method#main#0;class#BSTNonRecursive#0" expanded="false" />
@@ -1004,27 +1014,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5945946">
-          <caret line="203" column="64" selection-start-line="203" selection-start-column="64" selection-end-line="203" selection-end-column="64" />
+        <state vertical-scroll-proportion="1.308426">
+          <caret line="260" column="29" selection-start-line="260" selection-start-column="29" selection-end-line="260" selection-end-column="29" />
           <folding>
             <element signature="docComment;class#BST#0" expanded="false" />
             <element signature="class#Node#0;class#BST#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0;class#BST#0" expanded="false" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
             <element signature="method#size#1;class#BST#0" expanded="false" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
             <element signature="method#get#1;class#BST#0" expanded="false" />
-            <element signature="method#put#1;class#BST#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1499#1500#0" expanded="true" />
             <element signature="method#getSize#0;class#BST#0" expanded="false" />
+            <element signature="e#2382#2383#0" expanded="true" />
+            <element signature="e#2418#2419#0" expanded="true" />
             <element signature="method#min#1;class#BST#0" expanded="false" />
+            <element signature="e#2631#2632#0" expanded="true" />
+            <element signature="e#2667#2668#0" expanded="true" />
             <element signature="method#max#1;class#BST#0" expanded="false" />
             <element signature="method#floor#0;class#BST#0" expanded="false" />
-            <element signature="method#floor#1;class#BST#0" expanded="false" />
-            <element signature="method#select#0;class#BST#0" expanded="false" />
             <element signature="method#select#1;class#BST#0" expanded="false" />
             <element signature="method#rank#0;class#BST#0" expanded="false" />
             <element signature="method#rank#1;class#BST#0" expanded="false" />
-            <element signature="e#4582#4583#0" expanded="true" />
-            <element signature="e#4628#4629#0" expanded="true" />
-            <element signature="e#5311#5332#0" expanded="false" />
+            <element signature="e#4571#4572#0" expanded="true" />
+            <element signature="e#4600#4601#0" expanded="true" />
+            <element signature="e#5318#5319#0" expanded="true" />
+            <element signature="e#5364#5365#0" expanded="true" />
+            <element signature="method#isBST#1;class#BST#0" expanded="false" />
+            <element signature="method#buildSampleBST#0;class#BST#0" expanded="false" />
+            <element signature="e#6047#6068#0" expanded="false" />
           </folding>
         </state>
       </provider>

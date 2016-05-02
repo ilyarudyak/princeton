@@ -2,6 +2,8 @@ package com.ilyarudyak.java.interview.princeton;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 /**
@@ -188,7 +190,33 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     // ----------------- traversals ------------------
 
+    public void inorder() {
+        inorder(root);
+    }
+    private void inorder(Node x) {
+        if (x == null) { return; }
+        inorder(x.left);
+        System.out.print(x.key + " ");
+        inorder(x.right);
+    }
 
+    public Iterable<Key> levelOrder() {
+
+        Queue<Key> keys = new LinkedList<>();
+        if (root == null) { return keys; }
+
+        Queue<Node> nodes = new LinkedList<>();
+        nodes.add(root);
+        while (!nodes.isEmpty()) {
+            Node x = nodes.remove();
+            if (x != null) {
+                keys.add(x.key);
+                nodes.add(x.left);
+                nodes.add(x.right);
+            }
+        }
+        return keys;
+    }
 
     // ----------------- helper functions ----------------
 
@@ -227,8 +255,10 @@ public class BST<Key extends Comparable<Key>, Value> {
 
         BST<String, Integer> bst = buildSampleBST();
 
-        System.out.println(bst.isBST());
-
+        for (String key: bst.levelOrder()) {
+            System.out.print(key + " ");
+        }
+        System.out.println();
     }
 }
 
