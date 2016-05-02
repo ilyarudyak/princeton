@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dde2257-2cbd-4a2e-8604-a31493b78adf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ilyarudyak/java/interview/princeton/BSTNonRecursive.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ilyarudyak/java/interview/princeton/BSTNonRecursive.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BSTNonRecursive.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BSTNonRecursive.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java" />
     </list>
     <ignored path="bst.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,8 +65,8 @@
       <file leaf-file-name="BST.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8298887">
-              <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7027027">
+              <caret line="162" column="39" selection-start-line="162" selection-start-column="39" selection-end-line="162" selection-end-column="39" />
               <folding>
                 <element signature="docComment;class#BST#0" expanded="false" />
                 <element signature="class#Node#0;class#BST#0" expanded="false" />
@@ -78,10 +75,15 @@
                 <element signature="method#get#1;class#BST#0" expanded="false" />
                 <element signature="method#put#1;class#BST#0" expanded="false" />
                 <element signature="method#getSize#0;class#BST#0" expanded="false" />
-                <element signature="e#2329#2330#0" expanded="true" />
-                <element signature="e#2365#2366#0" expanded="true" />
-                <element signature="e#2578#2579#0" expanded="true" />
-                <element signature="e#2614#2615#0" expanded="true" />
+                <element signature="method#min#1;class#BST#0" expanded="false" />
+                <element signature="method#max#1;class#BST#0" expanded="false" />
+                <element signature="method#floor#0;class#BST#0" expanded="false" />
+                <element signature="method#floor#1;class#BST#0" expanded="false" />
+                <element signature="method#select#0;class#BST#0" expanded="false" />
+                <element signature="method#select#1;class#BST#0" expanded="false" />
+                <element signature="method#buildSampleBST#0;class#BST#0" expanded="false" />
+                <element signature="e#4424#4445#0" expanded="false" />
+                <element signature="method#main#0;class#BST#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -388,9 +390,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/BST.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BSTNonRecursive.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java" />
       </list>
     </option>
   </component>
@@ -791,6 +793,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2dde2257-2cbd-4a2e-8604-a31493b78adf" name="Default" comment="" />
@@ -835,6 +840,10 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/tinyST.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -873,8 +882,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8298887">
-          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7027027">
+          <caret line="162" column="39" selection-start-line="162" selection-start-column="39" selection-end-line="162" selection-end-column="39" />
           <folding>
             <element signature="docComment;class#BST#0" expanded="false" />
             <element signature="class#Node#0;class#BST#0" expanded="false" />
@@ -883,10 +892,15 @@
             <element signature="method#get#1;class#BST#0" expanded="false" />
             <element signature="method#put#1;class#BST#0" expanded="false" />
             <element signature="method#getSize#0;class#BST#0" expanded="false" />
-            <element signature="e#2329#2330#0" expanded="true" />
-            <element signature="e#2365#2366#0" expanded="true" />
-            <element signature="e#2578#2579#0" expanded="true" />
-            <element signature="e#2614#2615#0" expanded="true" />
+            <element signature="method#min#1;class#BST#0" expanded="false" />
+            <element signature="method#max#1;class#BST#0" expanded="false" />
+            <element signature="method#floor#0;class#BST#0" expanded="false" />
+            <element signature="method#floor#1;class#BST#0" expanded="false" />
+            <element signature="method#select#0;class#BST#0" expanded="false" />
+            <element signature="method#select#1;class#BST#0" expanded="false" />
+            <element signature="method#buildSampleBST#0;class#BST#0" expanded="false" />
+            <element signature="e#4424#4445#0" expanded="false" />
+            <element signature="method#main#0;class#BST#0" expanded="false" />
           </folding>
         </state>
       </provider>

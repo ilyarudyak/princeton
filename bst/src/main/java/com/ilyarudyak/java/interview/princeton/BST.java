@@ -119,9 +119,61 @@ public class BST<Key extends Comparable<Key>, Value> {
         return max(x.right);
     }
 
+    public Key floor(Key key) {
+        if (root == null) {
+            return null;
+        }
+
+        Node x = floor(root, key);
+        if (x != null) {
+            return x.key;
+        }
+
+        return null;
+    }
+    private Node floor(Node x, Key key) {
+        if (x == null) {
+            return null;
+        }
+        int cmp = key.compareTo(x.key);
+        if (cmp == 0) {
+            return x;
+        } else if (cmp < 0) {
+            return floor(x.left, key);
+        } else /* cmp > 0 */ {
+            Node y = floor(x.right, key);
+            if (y == null) {
+                return x;
+            } else {
+                return y;
+            }
+        }
+    }
+
+    public Key select(int k) {
+        if (root == null) {
+            return null;
+        }
+        Node x = select(root, k);
+        if (x != null) {
+            return x.key;
+        }
+        return null;
+    }
+    private Node select(Node x, int k) {
+
+        if (x == null)          { return null; }
+
+        int t = size(x.left);
+
+        if      (t == k)        { return x; }
+        else if (t >  k)        { return select(x.left, k); }
+        else /* (t <  k) */     { return select(x.right, k - t - 1); }
+    }
+
     // ----------------- helper functions ----------------
 
-    private static BST buildSampleBST() throws FileNotFoundException {
+    private static BST<String, Integer> buildSampleBST() throws FileNotFoundException {
         BST<String, Integer> bst = new BST<String, Integer>();
         Scanner in = new Scanner(new File("src/main/resources/tinyST.txt"));
         for (int i = 0; in.hasNext(); i++) {
@@ -141,9 +193,9 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        BST bst = buildSampleBST();
+        BST<String, Integer> bst = buildSampleBST();
 
-        System.out.println("min=" + bst.min() + " max=" + bst.max());
+        System.out.println("select(8)=" + bst.select(8));
 
     }
 }
