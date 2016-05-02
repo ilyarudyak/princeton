@@ -95,6 +95,33 @@ public class BSTNonRecursive<Key extends Comparable<Key>, Value> {
         }
     }
 
+    public Key min() {
+        if (root == null) {
+            return null;
+        }
+
+        Node cur = root;
+        while (true) {
+            if (cur.left == null) {
+                return cur.key;
+            }
+            cur = cur.left;
+        }
+    }
+    public Key max() {
+        if (root == null) {
+            return null;
+        }
+
+        Node cur = root;
+        while (true) {
+            if (cur.right == null) {
+                return cur.key;
+            }
+            cur = cur.right;
+        }
+    }
+
     // ----------------- helper functions ----------------
 
     private static BST buildSampleBST() throws FileNotFoundException {
@@ -115,19 +142,9 @@ public class BSTNonRecursive<Key extends Comparable<Key>, Value> {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        BSTNonRecursive<String, Integer> bst = new BSTNonRecursive<String, Integer>();
-        Scanner in = new Scanner(new File("src/main/resources/tinyST.txt"));
-        for (int i = 0; in.hasNext(); i++) {
-            String key = in.next();
-            bst.put(key, i);
-        }
-        in.close();
 
-        in = new Scanner(new File("src/main/resources/tinyST.txt"));
-        while (in.hasNext()) {
-            String key = in.next();
-            System.out.println(key + ":" + bst.get(key));
-        }
+        BST bst = buildSampleBST();
+        System.out.println("min=" + bst.min() + " max=" + bst.max());
     }
 }
 

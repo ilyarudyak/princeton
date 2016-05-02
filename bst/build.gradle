@@ -4,7 +4,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 
 mainClassName = "com.ilyarudyak.java.interview.princeton.BST"
-
+//mainClassName = "com.ilyarudyak.java.interview.princeton.BSTNonRecursive"
 
 
 repositories {
