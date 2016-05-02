@@ -30,10 +30,20 @@ public class BST<Key extends Comparable<Key>, Value> {
         return size(root);
     }
 
+    // ----------------- utility ------------------------
+
     // return number of key-value pairs in BST rooted at x
     private int size(Node x) {
         if (x == null) return 0;
         else return x.N;
+    }
+
+    public int height() {
+        return height(root);
+    }
+    private int height(Node x) {
+        if (x == null) { return 0; }
+        return Math.max(height(x.left), height(x.right)) + 1;
     }
 
     // ----------------- get and put ---------------------
@@ -232,6 +242,27 @@ public class BST<Key extends Comparable<Key>, Value> {
         return isBST(x.left, min, x.key) && isBST(x.right, x.key, max);
     }
 
+    public boolean isBalanced() {
+        if (root == null) { return true; }
+        Queue<Node> nodes = new LinkedList<>();
+        nodes.add(root);
+        while (!nodes.isEmpty()) {
+            Node x = nodes.remove();
+            if (!isBalanced(x)) {
+                return false;
+            }
+            if (x != null) {
+                nodes.add(x.left);
+                nodes.add(x.right);
+            }
+        }
+        return true;
+    }
+    private boolean isBalanced(Node x) {
+        if (x == null) { return true; }
+        return Math.abs(height(x.left) - height(x.right)) <= 1;
+    }
+
     public static BST<String, Integer> buildSampleBST() throws FileNotFoundException {
         BST<String, Integer> bst = new BST<String, Integer>();
         Scanner in = new Scanner(new File("src/main/resources/tinyST.txt"));
@@ -239,13 +270,15 @@ public class BST<Key extends Comparable<Key>, Value> {
             String key = in.next();
             bst.put(key, i);
         }
-//        in.close();
-//
-//        in = new Scanner(new File("src/main/resources/tinyST.txt"));
-//        while (in.hasNext()) {
-//            String key = in.next();
-//            System.out.println(key + ":" + bst.get(key) + ":" + bst.getSize(key));
-//        }
+        return bst;
+    }
+    public static BST<String, Integer> buildBalancedBST() throws FileNotFoundException {
+        BST<String, Integer> bst = new BST<String, Integer>();
+        Scanner in = new Scanner(new File("src/main/resources/balanced.txt"));
+        for (int i = 0; in.hasNext(); i++) {
+            String key = in.next();
+            bst.put(key, i);
+        }
         return bst;
     }
 
@@ -253,12 +286,10 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        BST<String, Integer> bst = buildSampleBST();
+        BST<String, Integer> bst = buildBalancedBST();
 
-        for (String key: bst.levelOrder()) {
-            System.out.print(key + " ");
-        }
-        System.out.println();
+
+        System.out.println(bst.isBalanced());
     }
 }
 
