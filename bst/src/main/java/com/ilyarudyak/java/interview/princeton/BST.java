@@ -171,9 +171,40 @@ public class BST<Key extends Comparable<Key>, Value> {
         else /* (t <  k) */     { return select(x.right, k - t - 1); }
     }
 
+    public int rank(Key key) {
+        if (root == null) {
+            return 0;
+        }
+        return rank(root, key);
+    }
+    private int rank(Node x, Key key) {
+        if (x == null) { return 0; }
+
+        int cmp = key.compareTo(x.key);
+        if (cmp == 0) { return size(x.left); }
+        else if (cmp < 0) { return rank(x.left, key); }
+        else { return rank(x.right, key) + size(x.left) + 1; }
+    }
+
+    // ----------------- traversals ------------------
+
+
+
     // ----------------- helper functions ----------------
 
-    private static BST<String, Integer> buildSampleBST() throws FileNotFoundException {
+    private boolean isBST() {
+        return isBST(root, null, null);
+    }
+    private boolean isBST(Node x, Key min, Key max) {
+        if (x == null) { return true; }
+        if (    (min != null && min.compareTo(x.key) >= 0) ||
+                (max != null && max.compareTo(x.key) <= 0) ) {
+            return false;
+        }
+        return isBST(x.left, min, x.key) && isBST(x.right, x.key, max);
+    }
+
+    public static BST<String, Integer> buildSampleBST() throws FileNotFoundException {
         BST<String, Integer> bst = new BST<String, Integer>();
         Scanner in = new Scanner(new File("src/main/resources/tinyST.txt"));
         for (int i = 0; in.hasNext(); i++) {
@@ -191,11 +222,12 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
 
+
     public static void main(String[] args) throws FileNotFoundException {
 
         BST<String, Integer> bst = buildSampleBST();
 
-        System.out.println("select(8)=" + bst.select(8));
+        System.out.println(bst.isBST());
 
     }
 }
