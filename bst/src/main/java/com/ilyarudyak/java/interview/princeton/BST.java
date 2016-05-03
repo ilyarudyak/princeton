@@ -46,22 +46,6 @@ public class BST<Key extends Comparable<Key>, Value> {
         return Math.max(height(x.left), height(x.right)) + 1;
     }
 
-    // length of path from root to x (number of edges)
-    public int path(Key key) {
-        if (root == null) { return 0; }
-
-        Node cur = root;
-        int count = 0;
-        while (cur != null) {
-            int cmp = key.compareTo(cur.key);
-            if (cmp == 0) { return count; }
-            else if (cmp < 0) { count++; cur = cur.left; }
-            else { count++; cur = cur.right; }
-
-        }
-        return -1;
-    }
-
     // ----------------- get and put ---------------------
 
     public Value get(Key key) {
@@ -113,6 +97,30 @@ public class BST<Key extends Comparable<Key>, Value> {
             }
         }
         return 0;
+    }
+
+    // distance from root to Node with given key (# of edges)
+    public int path(Key key) {
+        return path(root, key);
+    }
+    // distance from Node x to Node with given key
+    private int path(Node x, Key key) {
+        int cmp = key.compareTo(x.key);
+        if (cmp == 0) { return 0; }
+        else if (cmp < 0) { return path(x.left, key) + 1; }
+        else { return path(x.right, key) + 1; }
+    }
+    // the average number of compares required by a random search hit in a given BST
+    public double avgCompares() {
+
+        Iterable<Key> keys = levelOrder();
+        int pathSum = 0, count = 0;
+        for (Key key : keys) {
+            System.out.println(key + " ");
+            pathSum += path(key) + 1;
+            count++;
+        }
+        return (double) pathSum / count;
     }
 
     // ----------------- rank functions ------------------
@@ -214,7 +222,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         else { return rank(x.right, key) + size(x.left) + 1; }
     }
 
-    // ----------------- traversals ------------------
+    // ----------------- traversals ---------------------
 
     public void inorder() {
         inorder(root);
@@ -304,7 +312,8 @@ public class BST<Key extends Comparable<Key>, Value> {
 
         BST<String, Integer> bst = buildSampleBST();
 
-        System.out.println(bst.path("S"));
+        System.out.println(bst.avgCompares());
+
     }
 }
 

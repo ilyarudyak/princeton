@@ -122,28 +122,37 @@ public class BSTNonRecursive<Key extends Comparable<Key>, Value> {
         }
     }
 
+    // length of path from root to x (number of edges)
+    public int path(Key key) {
+        if (root == null) { return 0; }
+
+        Node cur = root;
+        int count = 0;
+        while (cur != null) {
+            int cmp = key.compareTo(cur.key);
+            if (cmp == 0) { return count; }
+            else if (cmp < 0) { count++; cur = cur.left; }
+            else { count++; cur = cur.right; }
+
+        }
+        return -1;
+    }
+
     // ----------------- helper functions ----------------
 
-    private static BST buildSampleBST() throws FileNotFoundException {
-        BST<String, Integer> bst = new BST<String, Integer>();
+    public static BSTNonRecursive<String, Integer> buildSampleBST() throws FileNotFoundException {
+        BSTNonRecursive<String, Integer> bst = new BSTNonRecursive<>();
         Scanner in = new Scanner(new File("src/main/resources/tinyST.txt"));
         for (int i = 0; in.hasNext(); i++) {
             String key = in.next();
             bst.put(key, i);
         }
-//        in.close();
-//
-//        in = new Scanner(new File("src/main/resources/tinyST.txt"));
-//        while (in.hasNext()) {
-//            String key = in.next();
-//            System.out.println(key + ":" + bst.get(key) + ":" + bst.getSize(key));
-//        }
         return bst;
     }
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        BST bst = buildSampleBST();
+        BSTNonRecursive<String, Integer> bst = buildSampleBST();
         System.out.println("min=" + bst.min() + " max=" + bst.max());
     }
 }
