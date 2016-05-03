@@ -26,13 +26,12 @@ public class BST<Key extends Comparable<Key>, Value> {
         }
     }
 
-    public int size() {
-        return size(root);
-    }
-
     // ----------------- utility ------------------------
 
     // return number of key-value pairs in BST rooted at x
+    public int size() {
+        return size(root);
+    }
     private int size(Node x) {
         if (x == null) return 0;
         else return x.N;
@@ -269,18 +268,28 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     // ----------------- helper functions ----------------
 
-    private boolean isBST() {
-        return isBST(root, null, null);
-    }
-    private boolean isBST(Node x, Key min, Key max) {
-        if (x == null) { return true; }
-        if (    (min != null && min.compareTo(x.key) >= 0) ||
-                (max != null && max.compareTo(x.key) <= 0) ) {
-            return false;
+    public static BST<String, Integer> buildSampleBST() throws FileNotFoundException {
+        BST<String, Integer> bst = new BST<String, Integer>();
+        Scanner in = new Scanner(new File("src/main/resources/tinyST.txt"));
+        for (int i = 0; in.hasNext(); i++) {
+            String key = in.next();
+            bst.put(key, i);
         }
-        return isBST(x.left, min, x.key) && isBST(x.right, x.key, max);
+        return bst;
+    }
+    public static BST<String, Integer> buildBalancedBST() throws FileNotFoundException {
+        BST<String, Integer> bst = new BST<String, Integer>();
+        Scanner in = new Scanner(new File("src/main/resources/balanced.txt"));
+        for (int i = 0; in.hasNext(); i++) {
+            String key = in.next();
+            bst.put(key, i);
+        }
+        return bst;
     }
 
+    // ------------------ interview -----------------------
+
+    // 4.1 laakman
     public boolean isBalanced() {
         if (root == null) { return true; }
         Queue<Node> nodes = new LinkedList<>();
@@ -302,24 +311,20 @@ public class BST<Key extends Comparable<Key>, Value> {
         return Math.abs(height(x.left) - height(x.right)) <= 1;
     }
 
-    public static BST<String, Integer> buildSampleBST() throws FileNotFoundException {
-        BST<String, Integer> bst = new BST<String, Integer>();
-        Scanner in = new Scanner(new File("src/main/resources/tinyST.txt"));
-        for (int i = 0; in.hasNext(); i++) {
-            String key = in.next();
-            bst.put(key, i);
-        }
-        return bst;
+    // 4.5 laakman
+    private boolean isBST() {
+        return isBST(root, null, null);
     }
-    public static BST<String, Integer> buildBalancedBST() throws FileNotFoundException {
-        BST<String, Integer> bst = new BST<String, Integer>();
-        Scanner in = new Scanner(new File("src/main/resources/balanced.txt"));
-        for (int i = 0; in.hasNext(); i++) {
-            String key = in.next();
-            bst.put(key, i);
+    private boolean isBST(Node x, Key min, Key max) {
+        if (x == null) { return true; }
+        if (    (min != null && min.compareTo(x.key) >= 0) ||
+                (max != null && max.compareTo(x.key) <= 0) ) {
+            return false;
         }
-        return bst;
+        return isBST(x.left, min, x.key) && isBST(x.right, x.key, max);
     }
+
+
 
 
 
