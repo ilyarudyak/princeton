@@ -3,9 +3,9 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'application'
 
-//mainClassName = "com.ilyarudyak.java.interview.princeton.BST"
+mainClassName = "com.ilyarudyak.java.interview.princeton.BST"
 //mainClassName = "com.ilyarudyak.java.interview.princeton.BSTNonRecursive"
-mainClassName = "com.ilyarudyak.java.interview.princeton.BSTHeight"
+//mainClassName = "com.ilyarudyak.java.interview.princeton.BSTHeight"
 
 
 repositories {

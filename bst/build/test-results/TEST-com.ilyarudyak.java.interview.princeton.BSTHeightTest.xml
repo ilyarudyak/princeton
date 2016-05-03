@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ilyarudyak.java.interview.princeton.BSTHeightTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-03T05:50:26" hostname="Ilyas-MacBook-Pro.local" time="0.022">
+<testsuite name="com.ilyarudyak.java.interview.princeton.BSTHeightTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-03T10:51:14" hostname="Ilyas-MacBook-Pro.local" time="0.014">
   <properties/>
-  <testcase name="testGetHeight" classname="com.ilyarudyak.java.interview.princeton.BSTHeightTest" time="0.022"/>
+  <testcase name="testGetHeight" classname="com.ilyarudyak.java.interview.princeton.BSTHeightTest" time="0.014"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

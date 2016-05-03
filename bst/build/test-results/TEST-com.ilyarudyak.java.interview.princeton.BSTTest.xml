@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ilyarudyak.java.interview.princeton.BSTTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-03T05:50:26" hostname="Ilyas-MacBook-Pro.local" time="0.002">
+<testsuite name="com.ilyarudyak.java.interview.princeton.BSTTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-05-03T10:51:14" hostname="Ilyas-MacBook-Pro.local" time="0.003">
   <properties/>
-  <testcase name="testRank" classname="com.ilyarudyak.java.interview.princeton.BSTTest" time="0.002"/>
+  <testcase name="testPath" classname="com.ilyarudyak.java.interview.princeton.BSTTest" time="0.002"/>
+  <testcase name="testRank" classname="com.ilyarudyak.java.interview.princeton.BSTTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

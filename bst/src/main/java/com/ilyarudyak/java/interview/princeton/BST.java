@@ -46,6 +46,22 @@ public class BST<Key extends Comparable<Key>, Value> {
         return Math.max(height(x.left), height(x.right)) + 1;
     }
 
+    // length of path from root to x (number of edges)
+    public int path(Key key) {
+        if (root == null) { return 0; }
+
+        Node cur = root;
+        int count = 0;
+        while (cur != null) {
+            int cmp = key.compareTo(cur.key);
+            if (cmp == 0) { return count; }
+            else if (cmp < 0) { count++; cur = cur.left; }
+            else { count++; cur = cur.right; }
+
+        }
+        return -1;
+    }
+
     // ----------------- get and put ---------------------
 
     public Value get(Key key) {
@@ -286,10 +302,9 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        BST<String, Integer> bst = buildBalancedBST();
+        BST<String, Integer> bst = buildSampleBST();
 
-
-        System.out.println(bst.isBalanced());
+        System.out.println(bst.path("S"));
     }
 }
 
