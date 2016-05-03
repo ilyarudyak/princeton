@@ -252,6 +252,21 @@ public class BST<Key extends Comparable<Key>, Value> {
         return keys;
     }
 
+    public void printByLevels() {
+        int level = 0;
+        System.out.print("level 0: ");
+        for (Key key : levelOrder()) {
+            if (path(key) == level) {
+                System.out.print(key + " ");
+            } else {
+                level++;
+                System.out.println();
+                System.out.print("level " + level + ": " + key + " ");
+            }
+        }
+        System.out.println();
+    }
+
     // ----------------- helper functions ----------------
 
     private boolean isBST() {
@@ -312,8 +327,7 @@ public class BST<Key extends Comparable<Key>, Value> {
 
         BST<String, Integer> bst = buildSampleBST();
 
-        System.out.println(bst.avgCompares());
-
+        bst.printByLevels();
     }
 }
 

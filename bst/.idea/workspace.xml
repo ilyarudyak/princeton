@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dde2257-2cbd-4a2e-8604-a31493b78adf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/princeton/BSTNonRecursiveTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ilyarudyak/java/interview/princeton/BST.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ilyarudyak/java/interview/princeton/BST.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ilyarudyak/java/interview/princeton/BSTNonRecursive.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ilyarudyak/java/interview/princeton/BSTNonRecursive.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/com/ilyarudyak/java/interview/princeton/BSTTest.class" afterPath="$PROJECT_DIR$/build/classes/test/com/ilyarudyak/java/interview/princeton/BSTTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/classes/com.ilyarudyak.java.interview.princeton.BSTHeightTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/classes/com.ilyarudyak.java.interview.princeton.BSTHeightTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/classes/com.ilyarudyak.java.interview.princeton.BSTTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/classes/com.ilyarudyak.java.interview.princeton.BSTTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/packages/com.ilyarudyak.java.interview.princeton.html" afterPath="$PROJECT_DIR$/build/reports/tests/packages/com.ilyarudyak.java.interview.princeton.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/TEST-com.ilyarudyak.java.interview.princeton.BSTHeightTest.xml" afterPath="$PROJECT_DIR$/build/test-results/TEST-com.ilyarudyak.java.interview.princeton.BSTHeightTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/TEST-com.ilyarudyak.java.interview.princeton.BSTTest.xml" afterPath="$PROJECT_DIR$/build/test-results/TEST-com.ilyarudyak.java.interview.princeton.BSTTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" afterPath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BSTNonRecursive.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BSTNonRecursive.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/princeton/BSTTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/princeton/BSTTest.java" />
     </list>
     <ignored path="bst.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,8 +71,8 @@
       <file leaf-file-name="BST.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5643879">
-              <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.5373609">
+              <caret line="266" column="27" selection-start-line="266" selection-start-column="27" selection-end-line="266" selection-end-column="27" />
               <folding>
                 <element signature="docComment;class#BST#0" expanded="false" />
                 <element signature="class#Node#0;class#BST#0" expanded="false" />
@@ -97,6 +83,7 @@
                 <element signature="method#put#1;class#BST#0" expanded="false" />
                 <element signature="method#getSize#0;class#BST#0" expanded="false" />
                 <element signature="method#path#1;class#BST#0" expanded="false" />
+                <element signature="method#avgCompares#0;class#BST#0" expanded="false" />
                 <element signature="method#min#1;class#BST#0" expanded="false" />
                 <element signature="method#max#1;class#BST#0" expanded="false" />
                 <element signature="method#floor#0;class#BST#0" expanded="false" />
@@ -991,6 +978,7 @@
             <element signature="method#put#1;class#BST#0" expanded="false" />
             <element signature="method#getSize#0;class#BST#0" expanded="false" />
             <element signature="method#path#1;class#BST#0" expanded="false" />
+            <element signature="method#avgCompares#0;class#BST#0" expanded="false" />
             <element signature="method#min#1;class#BST#0" expanded="false" />
             <element signature="method#max#1;class#BST#0" expanded="false" />
             <element signature="method#floor#0;class#BST#0" expanded="false" />
@@ -1109,8 +1097,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5643879">
-          <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.5373609">
+          <caret line="266" column="27" selection-start-line="266" selection-start-column="27" selection-end-line="266" selection-end-column="27" />
           <folding>
             <element signature="docComment;class#BST#0" expanded="false" />
             <element signature="class#Node#0;class#BST#0" expanded="false" />
@@ -1121,6 +1109,7 @@
             <element signature="method#put#1;class#BST#0" expanded="false" />
             <element signature="method#getSize#0;class#BST#0" expanded="false" />
             <element signature="method#path#1;class#BST#0" expanded="false" />
+            <element signature="method#avgCompares#0;class#BST#0" expanded="false" />
             <element signature="method#min#1;class#BST#0" expanded="false" />
             <element signature="method#max#1;class#BST#0" expanded="false" />
             <element signature="method#floor#0;class#BST#0" expanded="false" />
