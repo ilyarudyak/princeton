@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dde2257-2cbd-4a2e-8604-a31493b78adf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/ilyarudyak.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java" />
     </list>
@@ -70,11 +69,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BST.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BST.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="266" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.6772655">
+              <caret line="267" column="0" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#BST#0" expanded="false" />
                 <element signature="class#Node#0;class#BST#0" expanded="false" />
@@ -95,12 +94,10 @@
                 <element signature="method#rank#0;class#BST#0" expanded="false" />
                 <element signature="method#rank#1;class#BST#0" expanded="false" />
                 <element signature="method#inorder#1;class#BST#0" expanded="false" />
-                <element signature="method#levelOrder#0;class#BST#0" expanded="false" />
                 <element signature="method#printByLevels#0;class#BST#0" expanded="false" />
                 <element signature="method#buildSampleBST#0;class#BST#0" expanded="false" />
                 <element signature="method#buildBalancedBST#0;class#BST#0" expanded="false" />
                 <element signature="method#isBalanced#0;class#BST#0" expanded="false" />
-                <element signature="method#isBalanced#1;class#BST#0" expanded="false" />
                 <element signature="method#isBST#1;class#BST#0" expanded="false" />
                 <element signature="method#main#0;class#BST#0" expanded="false" />
               </folding>
@@ -118,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BSTTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BSTTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/princeton/BSTTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24324325">
+            <state vertical-scroll-proportion="0.0">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
               <folding />
             </state>
@@ -449,7 +446,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="61" />
+    <option name="x" value="133" />
     <option name="y" value="23" />
     <option name="width" value="1114" />
     <option name="height" value="679" />
@@ -479,7 +476,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -592,8 +588,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -890,7 +887,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="23" width="1114" height="679" extended-state="0" />
+    <frame x="133" y="23" width="1114" height="679" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -985,12 +982,110 @@
             <element signature="method#rank#0;class#BST#0" expanded="false" />
             <element signature="method#rank#1;class#BST#0" expanded="false" />
             <element signature="method#inorder#1;class#BST#0" expanded="false" />
-            <element signature="method#levelOrder#0;class#BST#0" expanded="false" />
             <element signature="method#printByLevels#0;class#BST#0" expanded="false" />
             <element signature="method#buildSampleBST#0;class#BST#0" expanded="false" />
             <element signature="method#buildBalancedBST#0;class#BST#0" expanded="false" />
             <element signature="method#isBalanced#0;class#BST#0" expanded="false" />
-            <element signature="method#isBalanced#1;class#BST#0" expanded="false" />
+            <element signature="method#isBST#1;class#BST#0" expanded="false" />
+            <element signature="method#main#0;class#BST#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/princeton/BSTTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#BST#0" expanded="false" />
+            <element signature="class#Node#0;class#BST#0" expanded="false" />
+            <element signature="method#Node#0;class#Node#0;class#BST#0" expanded="false" />
+            <element signature="method#size#1;class#BST#0" expanded="false" />
+            <element signature="method#height#1;class#BST#0" expanded="false" />
+            <element signature="method#get#1;class#BST#0" expanded="false" />
+            <element signature="method#put#1;class#BST#0" expanded="false" />
+            <element signature="method#getSize#0;class#BST#0" expanded="false" />
+            <element signature="method#path#1;class#BST#0" expanded="false" />
+            <element signature="method#avgCompares#0;class#BST#0" expanded="false" />
+            <element signature="method#min#1;class#BST#0" expanded="false" />
+            <element signature="method#max#1;class#BST#0" expanded="false" />
+            <element signature="method#floor#0;class#BST#0" expanded="false" />
+            <element signature="method#floor#1;class#BST#0" expanded="false" />
+            <element signature="method#select#0;class#BST#0" expanded="false" />
+            <element signature="method#select#1;class#BST#0" expanded="false" />
+            <element signature="method#rank#0;class#BST#0" expanded="false" />
+            <element signature="method#rank#1;class#BST#0" expanded="false" />
+            <element signature="method#inorder#1;class#BST#0" expanded="false" />
+            <element signature="method#printByLevels#0;class#BST#0" expanded="false" />
+            <element signature="method#buildSampleBST#0;class#BST#0" expanded="false" />
+            <element signature="method#buildBalancedBST#0;class#BST#0" expanded="false" />
+            <element signature="method#isBalanced#0;class#BST#0" expanded="false" />
+            <element signature="method#isBST#1;class#BST#0" expanded="false" />
+            <element signature="method#main#0;class#BST#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/princeton/BSTTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#BST#0" expanded="false" />
+            <element signature="class#Node#0;class#BST#0" expanded="false" />
+            <element signature="method#Node#0;class#Node#0;class#BST#0" expanded="false" />
+            <element signature="method#size#1;class#BST#0" expanded="false" />
+            <element signature="method#height#1;class#BST#0" expanded="false" />
+            <element signature="method#get#1;class#BST#0" expanded="false" />
+            <element signature="method#put#1;class#BST#0" expanded="false" />
+            <element signature="method#getSize#0;class#BST#0" expanded="false" />
+            <element signature="method#path#1;class#BST#0" expanded="false" />
+            <element signature="method#avgCompares#0;class#BST#0" expanded="false" />
+            <element signature="method#min#1;class#BST#0" expanded="false" />
+            <element signature="method#max#1;class#BST#0" expanded="false" />
+            <element signature="method#floor#0;class#BST#0" expanded="false" />
+            <element signature="method#floor#1;class#BST#0" expanded="false" />
+            <element signature="method#select#0;class#BST#0" expanded="false" />
+            <element signature="method#select#1;class#BST#0" expanded="false" />
+            <element signature="method#rank#0;class#BST#0" expanded="false" />
+            <element signature="method#rank#1;class#BST#0" expanded="false" />
+            <element signature="method#inorder#1;class#BST#0" expanded="false" />
+            <element signature="method#printByLevels#0;class#BST#0" expanded="false" />
+            <element signature="method#buildSampleBST#0;class#BST#0" expanded="false" />
+            <element signature="method#buildBalancedBST#0;class#BST#0" expanded="false" />
+            <element signature="method#isBalanced#0;class#BST#0" expanded="false" />
             <element signature="method#isBST#1;class#BST#0" expanded="false" />
             <element signature="method#main#0;class#BST#0" expanded="false" />
           </folding>
@@ -1029,7 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7297297">
           <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,14 +1169,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/princeton/BSTTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/princeton/BST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="266" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.6772655">
+          <caret line="267" column="0" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#BST#0" expanded="false" />
             <element signature="class#Node#0;class#BST#0" expanded="false" />
@@ -1103,31 +1212,13 @@
             <element signature="method#rank#0;class#BST#0" expanded="false" />
             <element signature="method#rank#1;class#BST#0" expanded="false" />
             <element signature="method#inorder#1;class#BST#0" expanded="false" />
-            <element signature="method#levelOrder#0;class#BST#0" expanded="false" />
             <element signature="method#printByLevels#0;class#BST#0" expanded="false" />
             <element signature="method#buildSampleBST#0;class#BST#0" expanded="false" />
             <element signature="method#buildBalancedBST#0;class#BST#0" expanded="false" />
             <element signature="method#isBalanced#0;class#BST#0" expanded="false" />
-            <element signature="method#isBalanced#1;class#BST#0" expanded="false" />
             <element signature="method#isBST#1;class#BST#0" expanded="false" />
             <element signature="method#main#0;class#BST#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/princeton/BSTTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24324325">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>

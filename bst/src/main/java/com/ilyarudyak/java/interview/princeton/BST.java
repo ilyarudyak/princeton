@@ -266,6 +266,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         System.out.println();
     }
 
+
     // ----------------- helper functions ----------------
 
     public static BST<String, Integer> buildSampleBST() throws FileNotFoundException {
@@ -323,9 +324,6 @@ public class BST<Key extends Comparable<Key>, Value> {
         }
         return isBST(x.left, min, x.key) && isBST(x.right, x.key, max);
     }
-
-
-
 
 
     public static void main(String[] args) throws FileNotFoundException {
