@@ -6,16 +6,14 @@ using namespace std;
 
 int main() {
 
-    fstream in("easy8.txt");
+    fstream in("rand8.txt");
     Encryptor encryptor(in, "password");
 
-    printf("   ");
-    encryptor.getPlainPass().KEYshow();
+    encryptor.getPlainPass()->KEYshow();
     cout << endl;
     encryptor.encrypt();
     cout << endl;
-    printf("   ");
-    encryptor.getEncriptedPass().KEYshow();
+    encryptor.getEncriptedPass()->KEYshow();
 
     return 0;
 }

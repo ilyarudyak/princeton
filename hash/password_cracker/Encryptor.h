@@ -22,26 +22,26 @@ public:
             }
         }
 
-        plainPass = password;
+        plainPass = new Key(password);
     }
 
     void encrypt() {
-        encriptedPass = plainPass.KEYsubsetsum(T);
+        encriptedPass = plainPass->KEYsubsetsum(T);
     }
 
-    Key &getEncriptedPass() {
+    Key *getEncriptedPass() {
         return encriptedPass;
     }
 
 
-    Key &getPlainPass() {
+    Key *getPlainPass() {
         return plainPass;
     }
 
 private:
     vector<Key> T;
-    Key plainPass;
-    Key encriptedPass;
+    Key *plainPass;
+    Key *encriptedPass;
 
 };
 

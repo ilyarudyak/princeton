@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 using namespace std;
 
 class Key {
@@ -19,6 +20,7 @@ public:
 
     Key() = default;
     Key(string s) {
+        digit.resize(C, 0);
         KEYinit(s);
     }
 
@@ -48,23 +50,24 @@ public:
         return (digit[i/B] >> (B - 1 - i % B)) & 1;
     }
 
-    Key  &KEYadd(Key &other) {
+    // add this to other and store result in third object
+    Key *KEYadd(Key &other) {
         int i;
-        Key res("a");
+        Key *res = new Key("a");
         int carry = 0;
         for (i = C-1; i >= 0; i--) {
-            res.digit[i] = (unsigned char) (
-                    (digit[i] + other.digit[i] + carry) % R);
-            carry = (digit[i] + other.digit[i] + carry) >= R;
+            res->digit[i] = (unsigned char) (
+                    (this->digit[i] + other.digit[i] + carry) % R);
+            carry = (this->digit[i] + other.digit[i] + carry) >= R;
         }
         return res;
     }
-    Key  &KEYsubsetsum(vector<Key> &keys) {
+    Key *KEYsubsetsum(vector<Key> &keys) {
         int i;
-        Key res("a");
+        Key *res = new Key("a");
         for (i = 0; i < N; i++)
             if (KEYbit(i)) {
-                res = res.KEYadd(keys[i]);
+                res = res->KEYadd(keys[i]);
                 printf("%2d ", i);               // for debugging
                 keys[i].KEYshow();               // for debugging
             }
@@ -72,7 +75,7 @@ public:
     }
 
 private:
-    unsigned char digit[C];
+    vector<unsigned char> digit;
 };
 
 #endif //PASSWORD_CRACKER_KEY_H
