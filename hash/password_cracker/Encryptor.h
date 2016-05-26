@@ -18,7 +18,7 @@ public:
         string word;
         while (in >> word) {
             if (!word.empty()) {
-                T.push_back(Key(word));
+                table.push_back(Key(word));
             }
         }
 
@@ -26,11 +26,11 @@ public:
     }
 
     void encrypt() {
-        encriptedPass = plainPass->KEYsubsetsum(T);
+        encryptedPass = plainPass->KEYsubsetsum(table);
     }
 
-    Key *getEncriptedPass() {
-        return encriptedPass;
+    Key *getEncryptedPass() {
+        return encryptedPass;
     }
 
 
@@ -39,9 +39,9 @@ public:
     }
 
 private:
-    vector<Key> T;
+    vector<Key> table;
     Key *plainPass;
-    Key *encriptedPass;
+    Key *encryptedPass;
 
 };
 
