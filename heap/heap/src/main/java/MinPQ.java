@@ -1,9 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by ilyarudyak on 6/5/16.
@@ -241,6 +238,13 @@ public class MinPQ<Key> implements Iterable<Key> {
             if (!hasNext()) throw new NoSuchElementException();
             return copy.delMin();
         }
+    }
+
+    @Override
+    public String toString() {
+        return "MinPQ{" +
+                "pq=" + Arrays.toString(pq) +
+                '}';
     }
 
     /**
