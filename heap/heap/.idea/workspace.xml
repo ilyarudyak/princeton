@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d1f75fb-184e-4b1f-a25c-fa0db6e1569f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/PerfectPower.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/KSmallest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MinPQ.java" afterPath="$PROJECT_DIR$/src/main/java/MinPQ.java" />
     </list>
     <ignored path="heap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/MinPQ.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="243" column="18" selection-start-line="243" selection-start-column="18" selection-end-line="243" selection-end-column="18" />
+              <caret line="203" column="13" selection-start-line="203" selection-start-column="13" selection-end-line="203" selection-end-column="13" />
               <folding>
                 <element signature="docComment;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#MinPQ#0;class#MinPQ#0" expanded="false" />
@@ -48,35 +49,42 @@
                 <element signature="docComment;method#MinPQ#4;class#MinPQ#0" expanded="false" />
                 <element signature="method#MinPQ#4;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#isEmpty#0;class#MinPQ#0" expanded="false" />
-                <element signature="docComment;method#size#0;class#MinPQ#0" expanded="false" />
-                <element signature="docComment;method#min#0;class#MinPQ#0" expanded="false" />
+                <element signature="e#2485#2486#0" expanded="true" />
+                <element signature="e#2509#2510#0" expanded="true" />
+                <element signature="method#min#0;class#MinPQ#0" expanded="false" />
+                <element signature="method#resize#0;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#insert#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#insert#0;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#delMin#0;class#MinPQ#0" expanded="false" />
+                <element signature="method#delMin#0;class#MinPQ#0" expanded="false" />
+                <element signature="docComment;method#swim#0;class#MinPQ#0" expanded="false" />
+                <element signature="method#swim#0;class#MinPQ#0" expanded="false" />
+                <element signature="method#sink#0;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#greater#0;class#MinPQ#0" expanded="false" />
+                <element signature="method#greater#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#exch#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#isMinHeap#1;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#iterator#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#iterator#0;class#MinPQ#0" expanded="false" />
+                <element signature="class#HeapIterator#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#HeapIterator#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#hasNext#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#remove#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#next#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#main#0;class#MinPQ#0" expanded="false" />
+                <element signature="method#main#0;class#MinPQ#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PerfectPower.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PerfectPower.java">
+      <file leaf-file-name="KSmallest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/KSmallest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65340906">
-              <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.9375">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
-                <element signature="method#PerfectPower#0;class#PerfectPower#0" expanded="false" />
-                <element signature="method#power#0;class#PerfectPower#0" expanded="false" />
-                <element signature="method#compareTo#0;class#PerfectPower#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -287,7 +295,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2930343939000" />
+        <entry key="$PROJECT_DIR$" value="2930358947000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -383,10 +391,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/tinyPQ.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/MinPQ.java" />
         <option value="$PROJECT_DIR$/src/main/java/TaxiCab.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/PerfectPower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MinPQ.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/KSmallest.java" />
       </list>
     </option>
   </component>
@@ -813,7 +822,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24955116" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24955116" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -856,18 +865,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PerfectPower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14204545">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="0.3125">
+          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+          <folding>
+            <element signature="method#PerfectPower#0;class#PerfectPower#0" expanded="false" />
+            <element signature="method#power#0;class#PerfectPower#0" expanded="false" />
+            <element signature="method#compareTo#0;class#PerfectPower#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MinPQ.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="243" column="18" selection-start-line="243" selection-start-column="18" selection-end-line="243" selection-end-column="18" />
+          <caret line="203" column="13" selection-start-line="203" selection-start-column="13" selection-end-line="203" selection-end-column="13" />
           <folding>
             <element signature="docComment;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#MinPQ#0;class#MinPQ#0" expanded="false" />
@@ -879,33 +892,48 @@
             <element signature="docComment;method#MinPQ#4;class#MinPQ#0" expanded="false" />
             <element signature="method#MinPQ#4;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#isEmpty#0;class#MinPQ#0" expanded="false" />
-            <element signature="docComment;method#size#0;class#MinPQ#0" expanded="false" />
-            <element signature="docComment;method#min#0;class#MinPQ#0" expanded="false" />
+            <element signature="e#2485#2486#0" expanded="true" />
+            <element signature="e#2509#2510#0" expanded="true" />
+            <element signature="method#min#0;class#MinPQ#0" expanded="false" />
+            <element signature="method#resize#0;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#insert#0;class#MinPQ#0" expanded="false" />
             <element signature="method#insert#0;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#delMin#0;class#MinPQ#0" expanded="false" />
+            <element signature="method#delMin#0;class#MinPQ#0" expanded="false" />
+            <element signature="docComment;method#swim#0;class#MinPQ#0" expanded="false" />
+            <element signature="method#swim#0;class#MinPQ#0" expanded="false" />
+            <element signature="method#sink#0;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#greater#0;class#MinPQ#0" expanded="false" />
+            <element signature="method#greater#0;class#MinPQ#0" expanded="false" />
             <element signature="method#exch#0;class#MinPQ#0" expanded="false" />
             <element signature="method#isMinHeap#1;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#iterator#0;class#MinPQ#0" expanded="false" />
             <element signature="method#iterator#0;class#MinPQ#0" expanded="false" />
+            <element signature="class#HeapIterator#0;class#MinPQ#0" expanded="false" />
             <element signature="method#HeapIterator#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
             <element signature="method#hasNext#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
             <element signature="method#remove#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
             <element signature="method#next#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#main#0;class#MinPQ#0" expanded="false" />
+            <element signature="method#main#0;class#MinPQ#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PerfectPower.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65340906">
-          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.14204545">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KSmallest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9375">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="method#PerfectPower#0;class#PerfectPower#0" expanded="false" />
-            <element signature="method#power#0;class#PerfectPower#0" expanded="false" />
-            <element signature="method#compareTo#0;class#PerfectPower#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

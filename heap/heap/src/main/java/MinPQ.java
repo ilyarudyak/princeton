@@ -77,6 +77,13 @@ public class MinPQ<Key> implements Iterable<Key> {
         return N == 0;
     }
 
+    public Key getByIndex(int index) {
+        if (index > N) {
+            return null;
+        }
+        return pq[index];
+    }
+
     /**
      * Returns the number of keys on this priority queue.
      *
