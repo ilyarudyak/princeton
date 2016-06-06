@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d1f75fb-184e-4b1f-a25c-fa0db6e1569f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/KSmallest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MinPQ.java" afterPath="$PROJECT_DIR$/src/main/java/MinPQ.java" />
@@ -33,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MinPQ.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MinPQ.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MinPQ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="203" column="13" selection-start-line="203" selection-start-column="13" selection-end-line="203" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.11931818">
+              <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
               <folding>
                 <element signature="docComment;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#MinPQ#0;class#MinPQ#0" expanded="false" />
@@ -49,8 +48,9 @@
                 <element signature="docComment;method#MinPQ#4;class#MinPQ#0" expanded="false" />
                 <element signature="method#MinPQ#4;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#isEmpty#0;class#MinPQ#0" expanded="false" />
-                <element signature="e#2485#2486#0" expanded="true" />
-                <element signature="e#2509#2510#0" expanded="true" />
+                <element signature="method#getByIndex#0;class#MinPQ#0" expanded="false" />
+                <element signature="docComment;method#size#0;class#MinPQ#0" expanded="false" />
+                <element signature="docComment;method#min#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#min#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#resize#0;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#insert#0;class#MinPQ#0" expanded="false" />
@@ -62,7 +62,6 @@
                 <element signature="method#sink#0;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#greater#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#greater#0;class#MinPQ#0" expanded="false" />
-                <element signature="method#exch#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#isMinHeap#1;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#iterator#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#iterator#0;class#MinPQ#0" expanded="false" />
@@ -71,17 +70,17 @@
                 <element signature="method#hasNext#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#remove#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
                 <element signature="method#next#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
+                <element signature="method#toString#0;class#MinPQ#0" expanded="false" />
                 <element signature="docComment;method#main#0;class#MinPQ#0" expanded="false" />
-                <element signature="method#main#0;class#MinPQ#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KSmallest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KSmallest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/KSmallest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9375">
+            <state vertical-scroll-proportion="0.0">
               <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -295,7 +294,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2930358947000" />
+        <entry key="$PROJECT_DIR$" value="2930360210000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -393,9 +392,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/tinyPQ.txt" />
         <option value="$PROJECT_DIR$/src/main/java/TaxiCab.java" />
         <option value="$PROJECT_DIR$/src/main/java/PerfectPower.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MinPQ.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/KSmallest.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/MinPQ.java" />
       </list>
     </option>
   </component>
@@ -877,10 +876,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MinPQ.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/KSmallest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="203" column="13" selection-start-line="203" selection-start-column="13" selection-end-line="203" selection-end-column="13" />
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19886364">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MinPQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11931818">
+          <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
           <folding>
             <element signature="docComment;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#MinPQ#0;class#MinPQ#0" expanded="false" />
@@ -892,8 +909,9 @@
             <element signature="docComment;method#MinPQ#4;class#MinPQ#0" expanded="false" />
             <element signature="method#MinPQ#4;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#isEmpty#0;class#MinPQ#0" expanded="false" />
-            <element signature="e#2485#2486#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
+            <element signature="method#getByIndex#0;class#MinPQ#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#MinPQ#0" expanded="false" />
+            <element signature="docComment;method#min#0;class#MinPQ#0" expanded="false" />
             <element signature="method#min#0;class#MinPQ#0" expanded="false" />
             <element signature="method#resize#0;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#insert#0;class#MinPQ#0" expanded="false" />
@@ -905,7 +923,6 @@
             <element signature="method#sink#0;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#greater#0;class#MinPQ#0" expanded="false" />
             <element signature="method#greater#0;class#MinPQ#0" expanded="false" />
-            <element signature="method#exch#0;class#MinPQ#0" expanded="false" />
             <element signature="method#isMinHeap#1;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#iterator#0;class#MinPQ#0" expanded="false" />
             <element signature="method#iterator#0;class#MinPQ#0" expanded="false" />
@@ -914,26 +931,8 @@
             <element signature="method#hasNext#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
             <element signature="method#remove#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
             <element signature="method#next#0;class#HeapIterator#0;class#MinPQ#0" expanded="false" />
+            <element signature="method#toString#0;class#MinPQ#0" expanded="false" />
             <element signature="docComment;method#main#0;class#MinPQ#0" expanded="false" />
-            <element signature="method#main#0;class#MinPQ#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14204545">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KSmallest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9375">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

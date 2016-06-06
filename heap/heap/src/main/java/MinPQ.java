@@ -10,6 +10,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     private Key[] pq;                    // store items at indices 1 to N
     private int N;                       // number of items on priority queue
     private Comparator<Key> comparator;  // optional comparator
+    private Key[] maxPQ;
 
     /**
      * Initializes an empty priority queue with the given initial capacity.
@@ -83,6 +84,42 @@ public class MinPQ<Key> implements Iterable<Key> {
         }
         return pq[index];
     }
+
+    // ---------------- heapify --------------------
+
+    public void buildMaxHeap() {
+        maxPQ = Arrays.copyOf(pq, pq.length);
+        for (int k = N/2; k >= 1; k--) {
+            sinkMax(k);
+        }
+    }
+
+    // helper functions
+    private void sinkMax(int k) {
+        while (2*k <= N) {
+            int j = 2*k;
+            if (j < N && less(j, j+1)) j++;
+            if (!less(k, j)) break;
+            exchMax(k, j);
+            k = j;
+        }
+    }
+    private boolean less(int i, int j) {
+        if (comparator == null) {
+            return ((Comparable<Key>) maxPQ[i]).compareTo(maxPQ[j]) < 0;
+        }
+        else {
+            return comparator.compare(maxPQ[i], maxPQ[j]) < 0;
+        }
+    }
+    private void exchMax(int i, int j) {
+        Key swap = maxPQ[i];
+        maxPQ[i] = maxPQ[j];
+        maxPQ[j] = swap;
+    }
+
+    // ---------------- heapify --------------------
+
 
     /**
      * Returns the number of keys on this priority queue.
@@ -258,13 +295,36 @@ public class MinPQ<Key> implements Iterable<Key> {
      * Unit tests the <tt>MinPQ</tt> data type.
      */
     public static void main(String[] args) throws FileNotFoundException {
-        MinPQ<String> pq = new MinPQ<>();
-        Scanner in = new Scanner(new File("src/main/resources/tinyPQ.txt"));
-        while (in.hasNext()) {
-            String item = in.next();
-            if (!item.equals("-")) pq.insert(item);
-            else if (!pq.isEmpty()) System.out.print(pq.delMin() + " ");
+
+        // test buildMaxHeap()
+        MinPQ<Integer> minHeap = new MinPQ<>();
+        for (int i = 0; i < 10; i++) {
+            minHeap.insert(i);
         }
-        System.out.println("(" + pq.size() + " left on pq)");
+        System.out.println(Arrays.toString(minHeap.pq));
+
+        minHeap.buildMaxHeap();
+        System.out.println(Arrays.toString(minHeap.maxPQ));
+
+//        MinPQ<String> pq = new MinPQ<>();
+//        Scanner in = new Scanner(new File("src/main/resources/tinyPQ.txt"));
+//        while (in.hasNext()) {
+//            String item = in.next();
+//            if (!item.equals("-")) pq.insert(item);
+//            else if (!pq.isEmpty()) System.out.print(pq.delMin() + " ");
+//        }
+//        System.out.println("(" + pq.size() + " left on pq)");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
