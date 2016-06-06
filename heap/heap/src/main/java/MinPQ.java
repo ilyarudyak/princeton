@@ -85,7 +85,7 @@ public class MinPQ<Key> implements Iterable<Key> {
         return pq[index];
     }
 
-    // ---------------- heapify --------------------
+    // ---------------- to max heap --------------------
 
     public void buildMaxHeap() {
         maxPQ = Arrays.copyOf(pq, pq.length);
@@ -118,7 +118,7 @@ public class MinPQ<Key> implements Iterable<Key> {
         maxPQ[j] = swap;
     }
 
-    // ---------------- heapify --------------------
+    // ---------------- to max heap --------------------
 
 
     /**
