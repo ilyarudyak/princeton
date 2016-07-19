@@ -1,22 +1,35 @@
 package algo1.pas.pa1;
 
-import java.util.Arrays;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 /**
  * Created by ilyarudyak on 7/19/16.
  */
 public class Inversion {
 
+    public static final int SIZE = 100_000;
+
     private int[] a;
     private int[] aux;
-    private int inversions;
+    private long inversions;
 
     public Inversion(int[] a) {
         this.a = a;
         aux = new int[a.length];
     }
+    public Inversion(String filename) {
+        a = new int[SIZE];
+        aux = new int[a.length];
+        try {
+            readArrayFromFile(filename);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 
-    public int getInversions() {
+    public long getInversions() {
         return inversions;
     }
 
@@ -57,12 +70,21 @@ public class Inversion {
         sort(0, a.length-1);
     }
 
+    // helper function
+    private void readArrayFromFile(String filename) throws FileNotFoundException {
+        Scanner in = new Scanner(new File(filename));
+        int i = 0;
+        while (in.hasNextInt()) {
+            a[i] = in.nextInt();
+            i++;
+        }
+    }
+
     public static void main(String[] args) {
 
-        int[] a = {1, 3, 5, 2, 4, 6};
-        Inversion inversion = new Inversion(a);
+        String filename = "src/main/resources/IntegerArray.txt";
+        Inversion inversion = new Inversion(filename);
         inversion.sort();
-        System.out.println(Arrays.toString(inversion.a));
         System.out.println(inversion.inversions);
 
     }
