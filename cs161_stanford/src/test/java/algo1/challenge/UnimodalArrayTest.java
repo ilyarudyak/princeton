@@ -1,7 +1,8 @@
-package algo1;
+package algo1.challenge;
 
 import algo1.challenge.UnimodalArray;
 import org.junit.Before;
+import org.junit.Ignore;
 
 import java.util.*;
 
@@ -63,7 +64,7 @@ public class UnimodalArrayTest {
         return list;
     }
 
-    @org.junit.Test
+    @org.junit.Test @Ignore
     public void testMax() throws Exception {
         for (int i = 0; i < ITERATION; i++) {
             assertEquals((int)Collections.max(lists.get(i)), arrays.get(i).max());

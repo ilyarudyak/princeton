@@ -9,10 +9,15 @@ public class Inversion {
 
     private int[] a;
     private int[] aux;
+    private int inversions;
 
     public Inversion(int[] a) {
         this.a = a;
         aux = new int[a.length];
+    }
+
+    public int getInversions() {
+        return inversions;
     }
 
     private void merge(int lo, int mid, int hi) {
@@ -27,7 +32,11 @@ public class Inversion {
         for (int k = lo; k <= hi; k++) {
             if      (i > mid)               a[k] = aux[j++];
             else if (j > hi)                a[k] = aux[i++];
-            else if (aux[j] < aux[i])       a[k] = aux[j++];
+            else if (aux[j] < aux[i]) {
+                                            a[k] = aux[j++];
+                // counting inversions
+                inversions += mid - i + 1;
+            }
             else                            a[k] = aux[i++];
         }
     }
@@ -50,10 +59,11 @@ public class Inversion {
 
     public static void main(String[] args) {
 
-        int[] a = {5, 4, 3, 2, 1};
+        int[] a = {1, 3, 5, 2, 4, 6};
         Inversion inversion = new Inversion(a);
         inversion.sort();
         System.out.println(Arrays.toString(inversion.a));
+        System.out.println(inversion.inversions);
 
     }
 }
