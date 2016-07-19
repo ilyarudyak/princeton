@@ -1,5 +1,6 @@
 package algo1;
 
+import algo1.challenge.UnimodalArray;
 import org.junit.Before;
 
 import java.util.*;

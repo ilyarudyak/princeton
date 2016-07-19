@@ -1,4 +1,4 @@
-package algo1;
+package algo1.challenge;
 
 import java.util.Arrays;
 import java.util.List;
