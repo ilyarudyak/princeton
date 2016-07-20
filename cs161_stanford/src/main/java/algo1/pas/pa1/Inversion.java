@@ -47,7 +47,7 @@ public class Inversion {
             else if (j > hi)                a[k] = aux[i++];
             else if (aux[j] < aux[i]) {
                                             a[k] = aux[j++];
-                // counting inversions
+                // counting inversions (the only added line to merge sort)
                 inversions += mid - i + 1;
             }
             else                            a[k] = aux[i++];
