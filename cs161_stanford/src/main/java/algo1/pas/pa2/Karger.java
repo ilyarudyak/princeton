@@ -5,7 +5,9 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 /**
- * Created by ilyarudyak on 7/20/16.
+ * Idea of implementation is from here:
+ * http://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-1-introduction-and-implementation/
+ * UF is from here: http://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/UF.java.html.
  */
 public class Karger {
 
@@ -33,6 +35,14 @@ public class Karger {
                     ")";
         }
     }
+    /**
+     * We represent Graph with its edges.
+     * We don't eliminate here the same edges like (0, 1) and (1,0),
+     * but we do this when create a Graph from file.
+     *
+     * We don't use multiple edges and self-loops. We also don't use
+     * combined nodes - we use UF for these purposes.
+     */
     private static class Graph {
 
         private int V;
@@ -78,6 +88,8 @@ public class Karger {
 
     public int buildCut() {
 
+        // wait until we have only 2 combined nodes
+        // we may also use count of UF
         while (cV > 2) {
             contractEdge();
         }
@@ -105,6 +117,9 @@ public class Karger {
         int src = e.getSrc();
         int dst = e.getDst();
 
+        // this is key idea - we don't eliminate nodes
+        // we just wait until we hit non-contracted edge
+        // (between non-connected in UF nodes)
         if (!uf.connected(src, dst)) {
             uf.union(src, dst);
             cV--;
@@ -134,6 +149,8 @@ public class Karger {
     private int extractEdges(String line, List<Edge> edges) {
         String[] splitLine = line.split("\\s+");
         int e = 0;
+        // provided file start numbering with 1
+        // but our UF need to start from 0
         int src = Integer.parseInt(splitLine[0]) - 1;
         for (int i = 1; i < splitLine.length; i++) {
             int dst = Integer.parseInt(splitLine[i]) - 1;

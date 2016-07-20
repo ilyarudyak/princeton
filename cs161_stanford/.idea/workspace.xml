@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e617cc3-c978-4e63-a62f-3c0d1cd4582f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/simpleGraph.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/ilyarudyak.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/ilyarudyak.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/algo1/pas/pa2/Karger.java" afterPath="$PROJECT_DIR$/src/main/java/algo1/pas/pa2/Karger.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../heap/heap/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../heap/heap/.idea/workspace.xml" />
@@ -51,16 +51,17 @@
       <file leaf-file-name="Karger.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/algo1/pas/pa2/Karger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34232953">
-              <caret line="158" column="20" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.056818184">
+              <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#Karger#0" expanded="false" />
                 <element signature="method#Edge#0;class#Edge#0;class#Karger#0" expanded="false" />
-                <element signature="class#Graph#0;class#Karger#0" expanded="false" />
-                <element signature="method#Graph#0;class#Graph#0;class#Karger#0" expanded="false" />
-                <element signature="method#buildCut#0;class#Karger#0" expanded="false" />
-                <element signature="method#countCut#0;class#Karger#0" expanded="false" />
+                <element signature="e#1437#1438#0" expanded="true" />
+                <element signature="e#1469#1470#0" expanded="true" />
+                <element signature="e#1498#1499#0" expanded="true" />
+                <element signature="e#1530#1531#0" expanded="true" />
+                <element signature="e#1570#1571#0" expanded="true" />
+                <element signature="e#1606#1607#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -735,16 +736,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/algo1/pas/pa2/Karger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34232953">
-          <caret line="158" column="20" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.056818184">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Karger#0" expanded="false" />
             <element signature="method#Edge#0;class#Edge#0;class#Karger#0" expanded="false" />
-            <element signature="class#Graph#0;class#Karger#0" expanded="false" />
-            <element signature="method#Graph#0;class#Graph#0;class#Karger#0" expanded="false" />
-            <element signature="method#buildCut#0;class#Karger#0" expanded="false" />
-            <element signature="method#countCut#0;class#Karger#0" expanded="false" />
+            <element signature="e#1437#1438#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1498#1499#0" expanded="true" />
+            <element signature="e#1530#1531#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1606#1607#0" expanded="true" />
           </folding>
         </state>
       </provider>
