@@ -38,6 +38,7 @@ public class UndirectedWeightedGraph {
     private int V;
     private int E;
     private List<List<Edge>> adj;
+    private boolean isStartedFromOne;
 
     /**
      * Initializes an empty graph with <tt>V</tt> vertices and 0 edges.
@@ -63,13 +64,13 @@ public class UndirectedWeightedGraph {
      * followed by the number of edges <em>E</em>,
      * followed by <em>E</em> pairs of vertices, with each entry separated by whitespace.
      *
-     * @param  in the input stream
      * @throws IndexOutOfBoundsException if the endpoints of any edge are not in prescribed range
      * @throws IllegalArgumentException if the number of vertices or edges is negative
      */
-    public UndirectedWeightedGraph(String filename, int v) {
+    public UndirectedWeightedGraph(String filename, int v, boolean isStartedFromOne) {
 
         this(v);
+        this.isStartedFromOne = isStartedFromOne;
 
         Scanner in = null;
         String line;
@@ -106,10 +107,13 @@ public class UndirectedWeightedGraph {
         E++;
 
         // in file nodes numbered from 1, we need from 0
-        src -= 1; dst -= 1;
+        if (isStartedFromOne) {
+            src -= 1;
+            dst -= 1;
+        }
 
         adj.get(src).add( new Edge(src, dst, weight) );
-        adj.get(dst).add( new Edge(dst, src, weight) );
+//        adj.get(dst).add( new Edge(dst, src, weight) );
     }
     public Iterable<Edge> adj(int v) {
         return adj.get(v);
@@ -130,8 +134,9 @@ public class UndirectedWeightedGraph {
 
     public static void main(String[] args) {
 
-        String filename = "src/main/resources/dijkstraData.txt";
-        UndirectedWeightedGraph G = new UndirectedWeightedGraph(filename, 200);
+//        String filename = "src/main/resources/dijkstraData.txt";
+        String filename = "src/main/resources/simpleDijkstra.txt";
+        UndirectedWeightedGraph G = new UndirectedWeightedGraph(filename, 4, false);
         System.out.println(G);
     }
 }
