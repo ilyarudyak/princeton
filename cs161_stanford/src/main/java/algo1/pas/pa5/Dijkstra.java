@@ -3,7 +3,6 @@ package algo1.pas.pa5;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.PriorityQueue;
 
 /**
  * Created by ilyarudyak on 7/21/16.
