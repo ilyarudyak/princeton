@@ -11,33 +11,9 @@ import java.util.Scanner;
  */
 public class UndirectedWeightedGraph {
 
-    private static class Edge {
-        private int src;
-        private int dst;
-        private int weight;
-
-        public Edge(int src, int dst, int weight) {
-            this.src = src;
-            this.dst = dst;
-            this.weight = weight;
-        }
-
-        public int getSrc() {
-            return src;
-        }
-
-        public int getDst() {
-            return dst;
-        }
-
-        public int getWeight() {
-            return weight;
-        }
-    }
-
     private int V;
     private int E;
-    private List<List<Edge>> adj;
+    private List<List<WeightedEdge>> adj;
     private boolean isStartedFromOne;
 
     /**
@@ -54,7 +30,7 @@ public class UndirectedWeightedGraph {
 
         adj = new ArrayList<>();
         for (int v = 0; v < V; v++) {
-            adj.add( new ArrayList<Edge>() );
+            adj.add( new ArrayList<WeightedEdge>() );
         }
     }
 
@@ -112,10 +88,10 @@ public class UndirectedWeightedGraph {
             dst -= 1;
         }
 
-        adj.get(src).add( new Edge(src, dst, weight) );
+        adj.get(src).add( new WeightedEdge(src, dst, weight) );
 //        adj.get(dst).add( new Edge(dst, src, weight) );
     }
-    public Iterable<Edge> adj(int v) {
+    public Iterable<WeightedEdge> adj(int v) {
         return adj.get(v);
     }
 
@@ -124,8 +100,8 @@ public class UndirectedWeightedGraph {
         s.append(V + " vertices, " + E + " edges " + "\n");
         for (int v = 0; v < V; v++) {
             s.append(v + " ");
-            for (Edge e : adj.get(v)) {
-                s.append(e.dst + "," + e.weight + " ");
+            for (WeightedEdge e : adj.get(v)) {
+                s.append(e.getDst() + "," + e.getWeight() + " ");
             }
             s.append("\n");
         }
