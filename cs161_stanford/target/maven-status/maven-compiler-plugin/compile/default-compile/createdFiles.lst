@@ -7,5 +7,7 @@ algo1/pas/pa2/Karger.class
 algo1/challenge/FixedPoint.class
 algo1/pas/pa2/UF.class
 algo1/challenge/SecondLargest.class
+algo1/pas/pa5/IndexMinPQ.class
+algo1/pas/pa5/IndexMinPQ$HeapIterator.class
 algo1/challenge/UnimodalArray.class
 algo1/pas/pa5/UndirectedWeightedGraph.class

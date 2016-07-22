@@ -17,12 +17,13 @@ public class WeightedEdge {
     public int getSrc() {
         return src;
     }
-
     public int getDst() {
         return dst;
     }
-
     public int getWeight() {
         return weight;
+    }
+    public int getOther (int v) {
+        return v == src ? dst : src;
     }
 }
